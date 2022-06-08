@@ -5,21 +5,21 @@
 class Canonyze < Formula
   desc "Canonizes a set of yaml documents into a standardized and sorted form that is suitable for comparison against another set"
   homepage "https://github.com/nestoca/canonyze"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nestoca/canonyze/releases/download/v0.1.0/canonyze_0.1.0_darwin_arm64.tar.gz"
-      sha256 "6d11551af054b7bbcda059a7328cf25370a369ec220f60361d3c8274f9005b5b"
+      url "https://github.com/nestoca/canonyze/releases/download/v0.2.0/canonyze_0.2.0_darwin_arm64.tar.gz"
+      sha256 "27bada8597e1e5036493c8fecc76374eb5c10b15a6be3392b1b0628ea4241b36"
 
       def install
         bin.install "canonyze"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nestoca/canonyze/releases/download/v0.1.0/canonyze_0.1.0_darwin_x86_64.tar.gz"
-      sha256 "38ffc58ee722d0c7980586c2f60d4b6c439adaf7ae290527c315662158dc660e"
+      url "https://github.com/nestoca/canonyze/releases/download/v0.2.0/canonyze_0.2.0_darwin_x86_64.tar.gz"
+      sha256 "c080c56b87c4889bad7ca2bbcff204ce834d445eb0349e799a0baf0b7aae23a8"
 
       def install
         bin.install "canonyze"
@@ -29,16 +29,16 @@ class Canonyze < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nestoca/canonyze/releases/download/v0.1.0/canonyze_0.1.0_linux_arm64.tar.gz"
-      sha256 "ef167cca5e70599ef026b1886ad438b524f6b2289d5332b2d7b4d6c5f61f2cec"
+      url "https://github.com/nestoca/canonyze/releases/download/v0.2.0/canonyze_0.2.0_linux_arm64.tar.gz"
+      sha256 "c2a30af0d877ab4b1cc79874fe9b0ee9142a252c3ea5ed4cfea86aad6351a9e4"
 
       def install
         bin.install "canonyze"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nestoca/canonyze/releases/download/v0.1.0/canonyze_0.1.0_linux_x86_64.tar.gz"
-      sha256 "7c162981e6d80eefbe3bc2da1acab4b937c2f2e6ce92ff9fd08c018e1c01f68e"
+      url "https://github.com/nestoca/canonyze/releases/download/v0.2.0/canonyze_0.2.0_linux_x86_64.tar.gz"
+      sha256 "a1a06854ba085f155e1864992981e98ad402eb188df952372bdfb38ff68e75c9"
 
       def install
         bin.install "canonyze"
